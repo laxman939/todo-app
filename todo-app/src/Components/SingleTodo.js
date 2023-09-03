@@ -5,8 +5,10 @@ export default function SingleTodo(props) {
   return (
     <div className="single-items">
       <li id="item">
-        <input type="checkbox" />
-        <span>{props.todo}</span>
+        <div className="d-flex align-items-center">
+          <input type="checkbox" />
+          <div>{props.todo}</div>
+        </div>
         <button
           id="delete-btn"
           onClick={() => {

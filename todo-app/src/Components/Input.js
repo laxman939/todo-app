@@ -8,7 +8,14 @@ const Input = (props) => {
   }
 
   return (
-    <div className="input-group mb-3 input-box">
+    <form
+      className="input-group mb-3 input-box"
+      onSubmit={(e) => {
+        e.preventDefault();
+        props.addTodo(item);
+        setItem("");
+      }}
+    >
       <input
         className="form-control input-text"
         type="text"
@@ -19,15 +26,11 @@ const Input = (props) => {
       <button
         className="btn btn-outline-secondary"
         id="button-addon2"
-        type="button"
-        onClick={() => {
-          props.addTodo(item);
-          setItem("");
-        }}
+        type="submit"
       >
         <i class="fas fa-plus-circle"></i>
       </button>
-    </div>
+    </form>
   );
 };
 

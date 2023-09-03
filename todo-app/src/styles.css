@@ -1,75 +1,99 @@
-body{
-    background-image:linear-gradient(90deg, rgb(238, 202, 155), rgb(156, 151, 111), rgb(207, 169, 157));
-    margin:1% 20% 2% 20%;
-    font-family: "Roboto";
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgb(238, 202, 155),
+    rgb(156, 151, 111),
+    rgb(207, 169, 157)
+  );
+  margin: 1% 20% 2% 20%;
+  font-family: "Roboto";
 }
 
-.heading > h1{
-    font-size: 40px;
-    font-family: sans-serif, "Roboto";
-    font-weight: 900;
-    color: saddlebrown;
+.heading > h1 {
+  font-size: 40px;
+  font-family: sans-serif, "Roboto";
+  font-weight: 900;
+  color: saddlebrown;
 }
-.heading{
-    text-align: center;
-    border: none;
-    background-image: linear-gradient(45deg, rgb(161, 150, 92),rgb(180, 169, 113), rgb(184, 176, 153), rgb(175, 166, 118), rgb(161, 150, 92));
-    border-radius: 10px;
-    padding: 2px;
-    margin: 1% 14% 2% 10%;
+.heading {
+  text-align: center;
+  border: none;
+  background-image: linear-gradient(
+    45deg,
+    rgb(161, 150, 92),
+    rgb(180, 169, 113),
+    rgb(184, 176, 153),
+    rgb(175, 166, 118),
+    rgb(161, 150, 92)
+  );
+  border-radius: 10px;
+  padding: 2px;
+  margin: 1% 14% 2% 10%;
 }
-.todos{
-    font-family: 'Cairo', sans-serif;
-    position: relative;
-    margin: 3% 0% 0% 10%;
-    width: 76%;
-    border: 2px solid rgb(88, 99, 74);
-    background-image: linear-gradient(45deg, rgb(161, 150, 92),rgb(180, 169, 113), rgb(184, 176, 153), rgb(175, 166, 118), rgb(161, 150, 92));
-    border-radius: 15px;
+.todos {
+  font-family: "Cairo", sans-serif;
+  position: relative;
+  margin: 3% 0% 0% 10%;
+  width: 76%;
+  border: 2px solid rgb(88, 99, 74);
+  background-image: linear-gradient(
+    45deg,
+    rgb(161, 150, 92),
+    rgb(180, 169, 113),
+    rgb(184, 176, 153),
+    rgb(175, 166, 118),
+    rgb(161, 150, 92)
+  );
+  border-radius: 15px;
 }
-.single-items{
-    font-size: 20px;
-    margin-left: 1rem;
-    margin-right: 6px;
-    border: none;
-  
+.single-items {
+  font-size: 20px;
+  margin-left: 1rem;
+  margin-right: 6px;
+  border: none;
 }
-.single-items > li{
-    list-style: none;
-    justify-content: space-between;
-    padding: 8px;
-    margin-right: 3.85rem;
-    color: rgb(12, 9, 0);
-    overflow-wrap: break-word;
-   
+.single-items > li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  margin-right: 3.85rem;
+  color: rgb(12, 9, 0);
+  overflow-wrap: break-word;
 }
-#delete-btn{
-    position: absolute;
-    right: 2%;
-    border: none;
-    border-radius: 50%;
-    background-color: rgb(123, 134, 99);
+#delete-btn {
+  position: absolute;
+  right: 2%;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(123, 134, 99);
 }
-#delete-btn:hover{
-    background-color: rgb(116, 7, 7);
+#delete-btn:hover {
+  background-color: rgb(116, 7, 7);
 }
-.single-items:hover{
-    background-color: rgb(123, 134, 99);
+.single-items:hover {
+  background-color: rgb(123, 134, 99);
+  border-radius: 6px;
 }
-.input-text{
-    background-color: rgb(197, 201, 192);
+.input-text {
+  background-color: rgb(197, 201, 192);
 }
-.input-box{
-    text-align: center;
-    padding: 4% 18% 2% 18%;
+.input-box {
+  text-align: center;
+  padding: 4% 18% 2% 18%;
 }
-input:checked+span{
-    text-decoration: line-through;
-    text-decoration-color: #550606;
+input[type="checkbox"] {
+  accent-color: #550606;
+  height: 17px;
+  width: 17px;
 }
-.dateSection > h3{
-    text-align: center;
-    border: none;
-    padding: 10px;
-    color: rgb(85, 52, 3);
+input:checked + span {
+  text-decoration: line-through;
+  text-decoration-color: #550606;
+}
+.dateSection > h3 {
+  text-align: center;
+  border: none;
+  padding: 10px;
+  color: rgb(85, 52, 3);
 }
